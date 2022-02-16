@@ -37,16 +37,16 @@ translate([-95,0,-2]) linear_extrude(10) _bbox();
 
 
 
-color("red") translate([-15,2,0]) difference(){
-  translate([-93.5,8,14])  
-	hull() {
-		translate([0,17,4]) rotate([0,90,0]) cylinder(2.85, 10, 10, true);
-		translate([0,-17,4]) rotate([0,90,0]) cylinder(2.85, 10, 10, true);
-		cube([2.85,45, 24], true);
-
-	}
-	import("/Users/dr6845/Dropbox/_Code/OpenSCAD/_OpenBot/STL/sonar_voids.stl");
-}
+//color("red") translate([-15,2,0]) difference(){
+//  translate([-93.5,8,14])  
+//	hull() {
+//		translate([0,17,4]) rotate([0,90,0]) cylinder(2.85, 10, 10, true);
+//		translate([0,-17,4]) rotate([0,90,0]) cylinder(2.85, 10, 10, true);
+//		cube([2.85,45, 24], true);
+//
+//	}
+//	import("/Users/dr6845/Dropbox/_Code/OpenSCAD/_OpenBot/STL/sonar_voids.stl");
+//}
 
 
 
