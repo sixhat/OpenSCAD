@@ -43,7 +43,7 @@ module _bbox() {
         }
     }
     // unComment this for wide holes
-    // rotate([0,0,45]) square(13, true);
+//     rotate([0,0,45]) square(13, true);
 }
 
 _bbox();
