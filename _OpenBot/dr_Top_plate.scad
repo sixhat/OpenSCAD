@@ -1,6 +1,6 @@
 
 $fn = 64;
-include <../_Primitives/SquareTriangle10mm.scad>;
+use <../_Primitives/SquareTriangle10mm.scad>;
 
 
 difference(){
@@ -36,6 +36,8 @@ translate([-95,0,-2]) linear_extrude(10) _bbox();
 
 
 
+// Uncomment to Add Sonar
+
 
 //color("red") translate([-15,2,0]) difference(){
 //  translate([-93.5,8,14])  
@@ -53,25 +55,3 @@ translate([-95,0,-2]) linear_extrude(10) _bbox();
 
 
 
-module _bbox(){
-	difference(){
-
-hull(){		
-mirror([1,0,0]) _squ();
-mirror([0,1,0]) _squ();
-mirror([1,0,0]) {
-	mirror([1,0,0]) _squ();
-	mirror([0,1,0]) _squ();
-}
-}
-
-union(){		
-mirror([1,0,0]) _squ();
-mirror([0,1,0]) _squ();
-mirror([1,0,0]) {
-	mirror([1,0,0]) _squ();
-	mirror([0,1,0]) _squ();
-}
-}
-}
-}
