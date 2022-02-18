@@ -1,3 +1,4 @@
+$fn=50;
 module _squ() {
     union() {
         _tri();
@@ -9,12 +10,12 @@ module _squ() {
 }
 
 module _tri() {
-    w = 0.8;
+    w = 0.75;
     difference() {
         offset(r = w) 
             polygon([[0, 0], [10, 0], [0, 10]]);
         
-        offset(w / 2) 
+        offset(w / 2.5) 
             offset(-w) 
             polygon([[0, 0], [10, 0], [0, 10]]);
     }
@@ -40,10 +41,12 @@ module _bbox() {
                 mirror([0, 1, 0]) 
                     _squ();
             }
-        }
+        	circle(3);
+			}
     }
     // unComment this for wide holes
 //     rotate([0,0,45]) square(13, true);
+circle(1.5);
 }
 
 _bbox();
