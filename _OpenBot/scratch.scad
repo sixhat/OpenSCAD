@@ -1,5 +1,5 @@
 // Spinners
-$fn=50;
+$fn=100;
 
 module _spinner (){
 	
@@ -8,7 +8,7 @@ difference(){
 hull(){
 circle(25);
 translate([0,-45]) circle(1);
-square([8,80], true);
+square([6,80], true);
 }
 
 

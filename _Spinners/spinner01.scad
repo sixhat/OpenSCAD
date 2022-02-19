@@ -9,13 +9,13 @@ module _spinner() {
                 circle(25);
                 translate([0, -45]) 
                     circle(1);
-                square([8, 80], true);
+                square([5, 80], true);
             }
             
             
             translate([25, -30]) 
                 circle(20);
-            translate([4, 5]) 
+            translate([3, 5]) 
                 square([200, 500]);
         }
         translate([-200, -100]) 
